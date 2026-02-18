@@ -1,4 +1,4 @@
-# zkVerify Awareo Demo — Proof of Liveness with Groth16
+# zkVerify Awareo Demo Proof of Liveness with Groth16
 
 > Zero-knowledge proof integration for [Awareo](https://awareo.io) using [zkVerify](https://zkverify.io) — from local circuit to on-chain verification.
 

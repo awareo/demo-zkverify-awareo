@@ -1,0 +1,17 @@
+node_modules/
+cache/
+artifacts/
+typechain-types/
+.env
+
+# Circuit build artifacts
+circuits/secret-proof/build/
+circuits/secret-proof/*.zkey
+circuits/secret-proof/*.ptau
+circuits/secret-proof/*.wtns
+circuits/secret-proof/proof.json
+circuits/secret-proof/public.json
+circuits/secret-proof/aggregation.json
+circuits/secret-proof/vkey.json
+circuits/secret-proof/verification_key.json
+circuits/secret-proof/input.json

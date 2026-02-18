@@ -163,22 +163,9 @@ npm run zkverify:verify-on-chain
 # → verified[signer] = true
 ```
 
-## Context: Awareo Platform
+## Context
 
-This demo is part of a larger integration roadmap for the Awareo platform:
-
-| Phase | Description | Status |
-|-------|-------------|--------|
-| **Level 1–3** | PoC: SecretProof circuit + zkVerify + Sepolia verification | Completed |
-| **Level 4** | Openfort ERC-4337 Smart Account integration (gasless for users) | Planned |
-| **Level 5** | Heartbeat-specific Proof-of-Liveness circuit | Planned |
-| **Level 6** | Production integration into HeartbeatSwitch contract | Planned |
-
-Awareo uses **Openfort embedded wallets** with ERC-4337 account abstraction and **Firebase Auth**, so users never interact with blockchain or ZK concepts directly. All proof generation and verification happens server-side, invisible to the end user.
-
-### HeartbeatSwitch
-
-The HeartbeatSwitch is a "Dead Man's Switch" mechanism: users automatically send a cryptographic heartbeat on each login. If they become inactive beyond a configurable threshold, trusted contacts (beneficiaries) can trigger access to shared data. The ZK integration adds a privacy-preserving layer — proving liveness without revealing user identity or activity patterns on-chain.
+This demo is part of a larger Web2 application that uses zkVerify for privacy-preserving user verification. The full integration runs server-side, invisible to end users.
 
 ## References
 

@@ -76,10 +76,11 @@ The `ZkVerifyTest` contract is deployed and verified on Sepolia with **18 succes
 ## Repository Structure
 
 ```
-zkverify-awareo-demo/
+demo-zkverify-awareo/
 ├── circuits/
 │   └── secret-proof/
-│       └── circuit.circom              # Circom SecretProof circuit
+│       ├── circuit.circom              # Circom SecretProof circuit
+│       └── input.json                  # Example input (secret + Poseidon hash)
 ├── contracts/
 │   └── zkverify/
 │       ├── interfaces/
@@ -87,6 +88,7 @@ zkverify-awareo-demo/
 │       └── ZkVerifyTest.sol            # On-chain verifier contract
 ├── scripts/
 │   └── zkverify/
+│       ├── compute-hash.js             # Poseidon hash helper
 │       ├── 02-submit-to-zkverify.ts    # Level 2: Submit proof to Volta
 │       ├── 02b-get-vkey-hash.ts        # Level 2: Get VKey hash
 │       ├── 03-deploy-verifier.ts       # Level 3: Deploy contract
@@ -118,6 +120,9 @@ cp .env.example .env
 ### Level 1 — Compile Circuit & Generate Proof
 
 ```bash
+# Compute Poseidon hash for input.json (optional, already included)
+node scripts/zkverify/compute-hash.js 12345
+
 cd circuits/secret-proof
 
 # Compile circuit

@@ -5,6 +5,7 @@
   "author": "awareo UG",
   "license": "MIT",
   "scripts": {
+    "compute-hash": "node scripts/zkverify/compute-hash.js",
     "zkverify:submit": "ts-node scripts/zkverify/02-submit-to-zkverify.ts",
     "zkverify:get-vkey-hash": "ts-node scripts/zkverify/02b-get-vkey-hash.ts",
     "zkverify:deploy": "hardhat run scripts/zkverify/03-deploy-verifier.ts --network sepolia",
@@ -12,6 +13,7 @@
   },
   "dependencies": {
     "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
     "dotenv": "^16.4.5",
     "ethers": "^6.13.2",
     "zkverifyjs": "^2.1.0"

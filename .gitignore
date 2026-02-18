@@ -14,4 +14,3 @@ circuits/secret-proof/public.json
 circuits/secret-proof/aggregation.json
 circuits/secret-proof/vkey.json
 circuits/secret-proof/verification_key.json
-circuits/secret-proof/input.json

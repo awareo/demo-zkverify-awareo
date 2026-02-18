@@ -60,9 +60,18 @@ Using zkverifyjs, we submit the Groth16 proof to zkVerify Volta. zkVerify batche
 
 `ZkVerifyTest.sol` on Sepolia reconstructs the Merkle leaf and calls the zkVerify Proxy contract to verify the aggregation proof.
 
-- zkVerify Proxy (Sepolia): `0xEA0A0f1EfB1088F4ff0Def03741Cb2C64F89361E`
+- zkVerify Proxy (Sepolia): [`0xEA0A0f1EfB1088F4ff0Def03741Cb2C64F89361E`](https://sepolia.etherscan.io/address/0xEA0A0f1EfB1088F4ff0Def03741Cb2C64F89361E)
 - Leaf construction with Groth16 endianness conversion
 - On success: `verified[msg.sender] = true`
+
+### Deployed Contract
+
+The `ZkVerifyTest` contract is deployed and verified on Sepolia with **18 successful on-chain proof verifications**:
+
+- **Contract:** [`0xF1F86d977e787b895D059C65dE649AeF9703902f`](https://sepolia.etherscan.io/address/0xF1F86d977e787b895D059C65dE649AeF9703902f)
+- **VKey Hash:** `0x8aead396c3c6ba98d0fc38d041ed8e744e71957415571ca5990c72c7b4b7e6cf`
+- **Source Code:** Verified on Etherscan (Solidity 0.8.24)
+- **Transactions:** 18 `verifyProof` calls (Feb 12–16, 2026)
 
 ## Repository Structure
 
